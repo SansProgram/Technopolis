@@ -6,36 +6,31 @@ TUTOR =[
   {
     'id': 1,
     'title': 'Tutor Position',
+    'department': 'Information Technology',
     'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R1500.00',
-    'department': ''
+    'salary': 'R200.00 p/h',
+    
   },
   {
     'id': 2,
     'title': 'Teacher Assistant',
+    'department': 'Information Systems',
     'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R1000.00',
-    'department': ''
+    'salary': 'R1000.00 p/m'
   },
   {
     'id': 1,
     'title': 'Tutor Position',
+    'department': 'Statistics',
     'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R1500.00',
-    'department': ''
-  },
-  {
-    'id': 1,
-    'title': 'Tutor Position',
-    'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R00.00',
-    'department': ''
+    'salary': 'R200 p/h',
+    
   }
 ]
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html', 
+  return render_template('login.html', 
                          tutor=TUTOR,
                         company_name='Technopolis')
 @app.route("/api/tutor")

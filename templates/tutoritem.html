@@ -4,15 +4,16 @@
       {{tut['title']}}
     </h4>
     <div>
+      <b>Department:</b> {{tut['department']}}
+    </div>
+    <div>
       <b>Location:</b> {{tut['location']}}
     </div>
     {% if 'salary' in tut %}
     <div>
       <b>Salary:</b> {{tut['salary']}}
     </div>
-    <div>
-      <b>Department:</b> {{tut['department']}}
-    </div>
+    
     {% endif %}
   </div>
   <div class="col-3">
