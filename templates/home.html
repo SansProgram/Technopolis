@@ -20,6 +20,12 @@
       #department {
         text-align: center;
       }
+
+      #discpar {
+        font-size: 30px;
+        text-align: center;
+      }
+      
     </style>
     
   </head>
@@ -32,29 +38,19 @@
 
       <img class="img-fluid" id="banner" src="https://technopolis.sansprogram.repl.co/static/banner(1).jpg">
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      
       <div>
         {% for tut in tutor %}
           {% include 'tutoritem.html' %}
         {% endfor %}
       </div>
-      <button type="button" class="btn btn-outline-light"">See all</button>
 
+      <a href="https://technopolis.sansprogram.repl.co/availpositions" button type="button" class="btn btn-outline-light">See all</a>
+      
       <h1 class="text-center mt-2 mb-4"> About Tutor++</h1>
-      <p class="lead">Tutor++ is a web applicaton designed and deployed by Technopolis. It is a tutor web application is an online platform that connects tutors and students. It allows tutors to create a profile and students to search for tutors based on their location, subject, and availability. The tutor web application also allows students to book and pay for tutoring sessions online.Tutor++ is a web-app that helps DUT Staff and students find each other in a designated environment for faster and more efficient communication. It is founded, developed and deployed by Technopolis. Motto/Code goes here</p>
+      <p id="discpar" class="lead">Tutor++ is a web applicaton designed and deployed by Technopolis. It is a tutor web application that connects tutors and students online. It allows departments to post positions and students to apply for said positions. Tutor++ is a web-app that helps DUT Staff and students find each other in a designated environment for faster and more efficient communication. It is founded, developed and deployed by Technopolis. <br> <b>Fall In Love With Learning Again</b></p>
 
-    <h3 class="text-center">Departments</h3>
-    <p id="department">
-      Accounting & Infomantics <br>
-      Applied Sciences <br>
-      Management Sciences <br>
-      Engineering & Built Environment <br>
-      Health Sciences <br>
-      Arts & Design
-    <p/>
-    <div>
     
-    </div>
-   
     </div> 
     {% include 'footer.html' %}
   </body>

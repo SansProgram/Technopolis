@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template#, jsonify
 from database import load_jobs_from_db
 
 app = Flask(__name__)
@@ -12,9 +12,9 @@ def home():
                        tutor=tutor,
                        company_name='Technopolis')
   
-@app.route("/api/tutor")
-def list_tutor():
-  return jsonify(TUTOR)
+# @app.route("/api/tutor")
+# def list_tutor():
+#   return jsonify(TUTOR)
 
 @app.route("/login/")
 def login_page():
@@ -31,6 +31,10 @@ def availpositions_page():
 @app.route("/myprofile/")
 def myprofile_page():
   return render_template('myprofile.html')
+
+@app.route("/application/")
+def application_page():
+  return render_template('application.html')
 # home link = https://technopolis.sansprogram.repl.co
 # sigup link = https://technopolis.sansprogram.repl.co/signup/
 # login link = https://technopolis.sansprogram.repl.co/login/
