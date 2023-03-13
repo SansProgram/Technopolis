@@ -1,41 +1,20 @@
 from flask import Flask, render_template, jsonify
+from database import load_jobs_from_db
 
 app = Flask(__name__)
 
-Positions =[
-  {
-    'id': 1,
-    'title': 'Tutor Position',
-    'department': 'Information Technology',
-    'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R200.00 p/h',
-    
-  },
-  {
-    'id': 2,
-    'title': 'Teacher Assistant',
-    'department': 'Information Systems',
-    'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R1000.00 p/m'
-  },
-  {
-    'id': 1,
-    'title': 'Tutor Position',
-    'department': 'Statistics',
-    'location': 'DUT Steve Biko, ML Sutan, Ritson Campuses',
-    'salary': 'R200 p/h',
-    
-  }
-]
+
 
 @app.route("/")
 def home():
+  tutor = load_jobs_from_db()
   return render_template('home.html', 
-                         tutor=Positions,
-                        company_name='Technopolis')
+                       tutor=tutor,
+                       company_name='Technopolis')
+  
 @app.route("/api/tutor")
 def list_tutor():
-  return jsonify(Positions)
+  return jsonify(TUTOR)
 
 @app.route("/login/")
 def login_page():
