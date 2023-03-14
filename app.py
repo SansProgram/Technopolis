@@ -11,10 +11,17 @@ def home():
   return render_template('home.html', 
                        tutor=tutor,
                        company_name='Technopolis')
-  
+
+def Avail():
+  tutor = load_jobs_from_db()
+  return render_template('availpositions.html', 
+                       tutor=tutor, company_name='Technopolis')
 # @app.route("/api/tutor")
 # def list_tutor():
 #   return jsonify(TUTOR)
+@app.route("/home/")
+def home_page():
+  return render_template('home.html')
 
 @app.route("/login/")
 def login_page():

@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
-from sqlalchemy import text 
+from sqlalchemy import text
+import os
 
-db_connection_string = "mysql+pymysql://eu5dsnup40thalnc5fwn:pscale_pw_3wcIvq9DufBCXvl1TngArPUjQ8NRqZzFuGxsyzqEXk0@ap-south.connect.psdb.cloud/tutor?charset=utf8mb4"
+db_connection_string = os.environ['DB_CONNECTION_STRING']
 
 engine = create_engine(
     db_connection_string,
@@ -10,6 +11,7 @@ engine = create_engine(
             "ssl_ca": "/etc/ssl/cert.pem"
         }
     })
+my_secret = os.environ['DB_CONNECTION_STRING']
 def load_jobs_from_db():
   with engine.connect() as conn:
     result = conn.execute(text("select * from tutor_"))
