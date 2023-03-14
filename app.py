@@ -1,4 +1,4 @@
-from flask import Flask, render_template#, jsonify
+from flask import Flask, render_template, jsonify
 from database import load_jobs_from_db
 
 app = Flask(__name__)
@@ -11,11 +11,12 @@ def home():
   return render_template('home.html', 
                        tutor=tutor,
                        company_name='Technopolis')
-
-def Avail():
-  tutor = load_jobs_from_db()
-  return render_template('availpositions.html', 
-                       tutor=tutor, company_name='Technopolis')
+  
+# @app.route("/tutor_/<id>")
+# def show_job(id):
+#   job = load_job_from_db(id)
+#   return jsonify(job)
+  
 # @app.route("/api/tutor")
 # def list_tutor():
 #   return jsonify(TUTOR)
