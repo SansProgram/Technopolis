@@ -26,18 +26,18 @@
   {% include 'nav.html' %}
   <div class="text-center">
     <h1>Signin</h1></br>
-  <label for="user">User:</label>
+  <label for="user" style="padding-bottom:10px;">User:</label>
   <select name="user" id="user">
-    <option value = "Student">Student</option>
+<!--     <option value = "Student">Student</option> -->
     <option value = "Admin">Admin</option>
   </select>
 
-  <form action="/" method="">
+  <form action="/" method="" style="padding-bottom:10px;">
     <input type="text" name="email" placeholder="Email"/></br>
     <input type="text" name="password" placeholder="Password"/></br>
-    <a href="#">forgot password?</a></br>
+<!--     <a href="#">forgot password?</a></br> -->
     <button class="btn btn-outline-dark">Login</button>
-    <button class="btn btn-outline-dark">Don't have an Account?</button>
+    <a href="https://technopolis.sansprogram.repl.co/signup" button type="button" class="btn btn-outline-dark">Don't have an Account?</a>
   </form>
     </div>
 </body>

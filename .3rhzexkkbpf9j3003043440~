@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>Technopolis</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+
+
+<div class="wrapper row1">
+  <section class="hoc clear"> 
+   
+    <nav id="mainav">
+        <ul class="clear">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="Apply_.html">Position</a></li>
+
+        </ul>
+        
+    </nav>
+    
+   
+    
+  </section>
+</div>
+
+
+  
+ 
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+   
+    <div class="sectiontitle">
+      <h6 class="heading">TEACHER ASSISTANT</h6>
+      
+    </div>
+    <div id="latest" class="group">
+      <article class="one_third first"><img src="teacher1.JPG" alt=""></a>
+        <div class="excerpt">
+            <h6 class="heading"></h6>
+          <p>SALARY: R1999</p>
+          
+        </div>
+      </article>
+      <article class="one_third"><img src="teacheer 2.JPG" alt=""></a>
+        <div class="excerpt">
+          <h6 class="heading"></h6>
+          <p>SALARY: R1799</p>
+          
+        </div>
+      </article>
+      <article class="one_third"><img src="teacher3.JPG" alt=""></a>
+        <div class="excerpt">
+            <h6 class="heading"></h6>
+          <p>SALARY: R1299</p>
+          
+        </div>
+      </article>
+    </div>
+	
+	
+        
+          
+        

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+    <div class="wrapper row1">
+    <section class="hoc clear">
+
+        <nav id="mainav">
+            <ul class="clear">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="Apply_.html">Position</a></li>
+            </ul>
+        </nav>
+    </section>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1><center>About Us:</center></h1>
+
+    <center><p>
+
+    Tutor++ is a web application designed by Technopolis,<br /> It is a tutor web application......
+
+</p></center>
+
+</body>
+</html>

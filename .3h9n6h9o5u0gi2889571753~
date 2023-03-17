@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html lang="">
+<head>
+    <title>Technopolis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+
+<style>
+
+    body {
+        background-image: url();
+        background-color: black;
+        color: black;
+    }
+
+    table, td {
+        border: 0px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+
+    h1 {
+        color: White;
+    }
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+
+    tr:nth-child(odd) {
+        background-color: gray;
+    }
+
+    
+</style>
+
+<script type="text/javascript">
+
+    function calcPrice() {
+        var totalPrice = 0;
+        for (var i = 0; i < document.nike.type.length; i++)
+            if (document.nike.type[i].checked == true) {
+                totalPrice += (parseInt(document.nike.type[i].value));
+            }
+
+        for (var i = 0; i < document.nike.color.length; i++)
+            if (document.nike.color[i].checked == true) {
+                totalPrice += (parseInt(document.nike.color[i].value));
+            }
+
+        for (var i = 0; i < document.nike.shoes.length; i++)
+            if (document.nike.shoes[i].checked == true) {
+                totalPrice += (parseInt(document.nike.shoes[i].value));
+                //alert(document.f1.color[i].value+" , "+ totalPrice);
+            }
+
+        for (var i = 0; i < document.nike.shoes2.length; i++)
+            if (document.nike.shoes2[i].checked == true) {
+                totalPrice += (parseInt(document.nike.shoes2[i].value));
+                //alert(document.f1.color[i].value+" , "+ totalPrice);
+            }
+
+        for (var i = 0; i < document.nike.shoes3.length; i++)
+            if (document.nike.shoes3[i].checked == true) {
+                totalPrice += (parseInt(document.nike.shoes3[i].value));
+                //alert(document.f1.color[i].value+" , "+ totalPrice);
+            }
+
+        totalPrice = totalPrice * parseInt(document.nike.pair.value);
+        alert("The price of your order will be R" + totalPrice);
+
+    }
+</script>
+</head>
+
+<body id="top">
+
+    <div class="wrapper row1">
+        <section class="hoc clear">
+
+            <nav id="mainav">
+                <ul class="clear">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="Apply_.html">position</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+        </section>
+    </div>
+
+    <center>
+        <form name="nike">
+
+            <h1>Open Position:</h1>
+
+            <table width="800 ">
+                <tr valign="middle">
+                    <td>
+                        <b>Please Select Position</b>
+                    </td>
+                    <td>
+                        <b>Location:</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="type" value="3" />Tutor Position</td>
+                    <td>
+                        <input type="radio" name="Location" value="1682" />Dut Steve Biko<br>
+                        <input type="radio" name="Location" value="1399" />Dut Ritson<br>
+                        <input type="radio" name="Location" value="1700" />Dut ML Sultan<br>
+                        <input type="radio" name="Location" value="839" />Dut City Campus<br />
+                       
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="type" value="2" />Teachers assistant</td>
+                    <td>
+                        <input type="radio" name="Location2" value="1999" />Dut steve Biko<br>
+                        <input type="radio" name="Location2" value="1799" />Dut Ritson<br>
+                        <input type="radio" name="Location2" value="1299" />Dut ML Sultan<br>
+                        <input type="radio" name="Location2" value="2099" />Dut City Campus<br />
+                       
+                    </td>
+                </tr>
+
+                
+
+                <tr>
+                    <td><b>Please Select Department(s)</b></td>
+                    <td>
+                        <input type="radio" name="color" value="0" />Information Communication Technology
+                        <input type="radio" name="color" value="30" />Applied sciences
+                        <input type="radio" name="color" value="15" />Maritime
+                        <input type="radio" name="color" value="45" />Accounting<br />
+                        <input type="radio" name="color" value="20" />Marketing & design
+                        <input type="radio" name="color" value="25" />Graphic Design
+                        <input type="radio" name="color" value="40" />Tourism
+                        <input type="radio" name="color" value="5" />Hospitality<br />
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Quantity:<select name="Quantity">
+                            <option value="size">**Quantity**</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+                    </td>
+                    <td> Pair(s):<input type="text" name="pair" value="1" /></td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td><b>Personal details:</b></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Name:<input type="text" name="name" placeholder="name" /></td>
+                    <td>Surname:<input type="text" name="surname" placeholder="surname" /></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Country:<select name="Country">
+                            <option value="Country">**Country**</option>
+                            <option value="1">South Africa</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="France">France</option>
+                            <option value="United States">United States</option>
+                            <option value="China">China</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="United Kingdom">United kingdom</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>Address:<input type="address" name="address" placeholder="address" /></td>
+                </tr>
+
+            </table>
+
+            <br />
+
+            <center>
+                <input type="submit" value="Apply" onclick="calcPrice()" />
+            </center>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </form>
+    </center>
+</body>
+</html>
