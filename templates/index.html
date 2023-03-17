@@ -8,7 +8,7 @@
             <h2>{{ post['title'] }}</h2>
             <p>{{ post['content'] }}</p>
             <a href="{{ url_for('edit', id=post['id'] )}}">Edit</a>
-            <a href="https://technopolis.sansprogram.repl.co/application/">Apply</a>
+            <a href="mailto:dut4Ipinboard@dut.a.za?subject=Application for {{post['title']}}" type="button" class="btn btn-secondary">Apply</a>
         </div>
     {% endfor %}
 {% endblock %}
